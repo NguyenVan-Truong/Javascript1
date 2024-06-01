@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form lựa chọn sở thích</title>
+  </head>
+  <body>
+    <form action="#" onsubmit="return false;">
+      <label for="interests">Sở thích của bạn:</label><br>
+      <input type="checkbox" id="interest1" name="interests" value="Du lịch">
+      <label for="interest1">Du lịch</label><br>
+      <input type="checkbox" id="interest2" name="interests" value="Ăn uống">
+      <label for="interest2">Ăn uống</label><br>
+      <input type="checkbox" id="interest3" name="interests" value="Âm nhạc">
+      <label for="interest3">Âm nhạc</label><br>
+      <input type="checkbox" id="interest4" name="interests" value="Thể dục thể thao">
+      <label for="interest4">Thể dục thể thao</label><br>
+      <br>
+      <button onclick="submitForm()">Gửi</button>
+    </form>
+    <br>
+    <p id="result"></p>
+
+    <script>
+      function submitForm() {
+        const selectedInterests = document.querySelectorAll('input[name="interests"]:checked');
+        let resultString = "Sở thích của bạn là: ";
+        for (let i = 0; i < selectedInterests.length; i++) {
+          resultString += selectedInterests[i].value + ", ";
+        }
+        // resultString = resultString.slice(0, -2);
+        document.getElementById("result").innerHTML = resultString;
+      }
+    </script>
+  </body>
+</html>

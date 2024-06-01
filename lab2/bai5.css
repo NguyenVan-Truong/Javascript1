@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+.container{
+    background-image: url(4.jpg);
+    width: 930px;
+    height: 440px;
+    margin: 0 auto;
+}
+.tieude{
+    color: red;
+    font-size: 25px;
+}
+.truong{
+    width: 150px;
+    height: 50px;
+    color: black;
+    background-color: yellow ;
+    border: 1px solid yellow;
+}
+.truong:hover{
+    color:red;
+    background-color: white;
+    border: 1px solid white;
+}

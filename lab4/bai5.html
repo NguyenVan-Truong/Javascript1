@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+       
+       
+        let product = [];
+        function sanPham(tenSanPham, moTa, donGia, mauSac){
+            this.tenSanPham = tenSanPham;
+            this.moTa = moTa;
+            this.donGia = donGia;
+            this.mauSac = mauSac;
+        }
+        function themdulieu(){
+            do{
+                
+                let tenSanPham=prompt("nhap ten san pham");
+                let moTa=prompt("nhap mo ta");
+                let donGia=prompt("nhap don gia");
+                let mauSac=prompt("nhap mau sac");
+                let SanPham=new sanPham(tenSanPham,moTa,donGia,mauSac);
+                product.push(SanPham);
+
+            }while(SanPham!=7)
+        }
+        function hienthidulieu(){
+            for(let i=0; i<product.length; i++){
+                document.write(`san pham thu ${i+1}:\n`)
+                document.write(`ten san pham ${product[i].tenSanPham}:\n`)
+                document.write(`mo ta san pham ${product[i].moTa}:\n`)
+                document.write(`don gia san pham ${product[i].donGia}:`)
+                document.write(`mau sac: ${product[i].mauSac}:`)
+            }
+        }
+        
+        
+
+</script>
+    <button onclick="themdulieu()">Thêm Dữ Liệu</button>; 
+    <button onclick="hienthidulieu()">Hiển Thị Dữ Liệu</button>;
+     
+
+</body>
+</html>

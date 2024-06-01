@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrOfShapes =['Lauren', 'Kevin',true,35,null,undefined,['one', 'two']] ;
+        arrOfShapes.splice(0, 1, "FIRST");
+        // xoa va them
+        arrOfShapes.pop();
+        // xoa chu cuoi
+        arrOfShapes.splice(3, 0, "hello world");
+        arrOfShapes.splice(3,0, "middle")
+        arrOfShapes.push("last");
+        //them vao chu cuoi
+        console.log(arrOfShapes);
+
+    </script>
+</body>
+</html>

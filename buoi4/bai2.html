@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function hienThiAnh(dovat) {
+	if (dovat == "game") {
+		document.write("<img src = 'game.png'>");
+	} else {
+		document.write("<img src = 'football.jpg'>");
+	}
+}
+</script>
+</head>
+<body>
+<p> Bạn thích chơi:</p>
+<input type="button" value="Game" onclick="hienThiAnh('game');"/>
+<input type="button" value="Đá banh" onclick="hienThiAnh('football');"/>
+</body>
+</html>

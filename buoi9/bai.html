@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    
+    <form action="">
+        <div class="item">
+            <label for="nameSP">Tên sản phẩm</label>
+            <input type="text" placeholder="Tên sản phẩm" id="nameSP">
+        </div>
+        <div class="item">
+            <label for="maSP">Mã sản phẩm</label>
+            <input type="text" placeholder="Mã sản phẩm" id="maSP">
+        </div>
+        <div class="item">
+            <label for="typeSP">Loại sản phẩm</label>
+            <select name="" id="typeSP">
+                <option value="" hidden>-- Mời chọn Loại--</option>
+                <option value="1">Loại 1</option>
+                <option value="2">Loại 2</option>
+                <option value="3">Loại 3</option>
+            </select>
+        </div>
+        <div class="item">
+            <label for="giaSP">Giá sản phẩm</label>
+            <input type="number" placeholder="Giá sản phẩm" id="giaSP">
+        </div>
+        <div class="item">
+            <span>Nhà sản xuất sản phẩm</span>
+            <input type="radio" id="nsxA" value="nsxA" name="nsx">
+            <label for="nsxA">Nhà sản xuất A</label>
+            <input type="radio" id="nsxB" value="nsxB" name="nsx">
+            <label for="nsxB">Nhà sản xuất B</label>
+        </div>
+        <input type="button" name="" id="btnNhap" value="Nhập sản phẩm "> 
+        <input type="button" name="" id="btnHienThi" value="Hiển thị sản phẩm "> 
+
+    </form>
+    <br /> 
+
+    <!-- form hiển thị -->
+    <div class="block-show">
+        <!-- Nội dung hiển thị sản phẩm ở đây viết bên JS -->
+    </div>
+
+
+    <script src="bai.js"></script>
+</body>
+</html>

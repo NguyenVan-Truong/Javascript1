@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Trò chơi đoán</title>
+ <script type="text/javascript">
+  function guessNumber(){
+    //math.round la lam tron so
+    //math.random la so ngau nhien
+   var x = 10 + Math.round(5 * Math.random());
+   var a = prompt("Đoán một số từ 10 đến 15");
+   if(a == x){
+    alert("Chúc mừng! Bạn đoán đúng số bí mật!");
+   }
+   else if(a > x){
+    alert("Dự đoán của bạn quá cao. Thử lại.");
+   }
+   else{
+    alert("Dự đoán của bạn quá thấp. Thử lại.");
+  }
+  console.log(x);
+}
+ </script>
+ <link rel="stylesheet" href="bai5.css">
+</head>
+<body >
+  <div class="container">
+    <div class="tieude">
+      <h1>Trò chơi đoán</h1>
+      <p>Hãy thử đoán số bí mật từ 10 đến 15:</p>
+      <button class="truong" onclick="guessNumber()">Bắt Đầu </button>
+    </div>
+ </div>
+</body>
+</html>

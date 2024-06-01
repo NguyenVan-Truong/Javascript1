@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form action="">
+        <div class="item">
+            <label for="nameSP">Tên sản phẩm</label>
+            <input type="text" placeholder="Tên sản phẩm" id="nameSP">
+        </div>
+        <div class="item">
+            <label for="maSP">Mã sản phẩm</label>
+            <input type="text" placeholder="Mã sản phẩm" id="maSP">
+        </div>
+        <div class="item">
+            <label for="typeSP">Loại sản phẩm</label>
+            <select name="" id="typeSP">
+                <option value="" hidden>Mời chọn loại</option>
+                <option value="10000">Loại 1(10000vnĐ)</option>
+                <option value="20000">Loại 2(20000vnđ)</option>
+                <option value="30000">Loại 3(30000vnđ)</option>
+            </select>
+        </div>
+        <div class="item">
+            <label for="soluong">Số lượng sản phẩm</label>
+            <input type="number" placeholder="Giá sản phẩm" id="soluong">
+        </div>
+        <div class="item">
+            <span>Nhà sản xuất sản phẩm</span>
+            <input type="radio" id="nsxA" value="nsxA" name="nsx">
+            <label for="nsxA">Nhà sản xuất A</label>
+            <input type="radio" id="nsxB" value="nsxB" name="nsx">
+            <label for="nsxB">Nhà sản xuất B</label>
+        </div>
+        <div class="item">
+            <label for="tong">Tổng thành tiền</label>
+            <input type="text" placeholder="" id="tong" value="0" readonly>
+        </div>
+        <input type="button" name="" id="btnNhap" value="Nhập sản phẩm ">
+        <input type="button" name="" id="btnHienThi" value="Hiển thị sản phẩm ">
+
+    </form>
+    <br />
+
+    <!-- form hiển thị -->
+    <div class="block-show" >
+       
+        <!-- Nội dung hiển thị sản phẩm ở đây viết bên JS
+        <h3>Tên sản phẩm: </h3>
+        <p>Mã sản phẩm: </p>
+        <p>Loại Sản phẩm: </p>
+        <p>Giá Sản phẩm</p>
+        <p>Nhà Sản Xuất: </p> -->
+
+    </div>
+
+
+    
+</body>
+<script src="bai1.js"></script>
+
+</html>

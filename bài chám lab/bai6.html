@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div class="item">
+            <label for="">Loại sản phẩm</label>
+            <select name="" id="loai">
+                <option value="" hidden>__Mời chọn loại__</option>
+                <option value="10000">loại 1(10000)</option>
+                <option value="20000">loại 1(20000)</option>
+                <option value="30000">loại 1(30000)</option>
+            </select>
+            <span id="checkloai"></span>
+        </div>
+        <div class="item">
+                <label for="gia">Giá sản phẩm</label>
+                <input type="number"  placeholder="giá sản phẩm" id="gia" readonly>
+                <span id="checkgia"></span>
+        </div>
+        <div class="item">
+            <label for="soluong">số lượng</label>
+            <input type="number" placeholder="số lượng sản phẩm" id="soluong">
+            <span id="checksoluong"></span>
+        </div>
+        <div class="item">
+    
+            <span>Địa chỉ</span>
+            <input type="radio" id="noithanh" value="0" name="diachi">
+            <label for="A">nội thành</label>
+            <input type="radio" id="ngoaithanh" value="30000" name="diachi" >
+            <label for="B">ngoại thành</label>
+            <span id="checkdiachi"></span>
+        </div>
+        <div class="item">
+            <label for="ship">Phí Vận Chuyển</label>
+           <input type="number"placeholder="Phí vận chuyển" id="ship" readonly>
+        </div>
+        <div class="item">
+            <label for="tong">Tổng tiền</label>
+            <input type="number" placeholder="tổng thành tiền" id="tong" readonly>
+        </div>
+        <input type="button" id="btnnhap" value="Nhập sản phẩm">
+        <input type="button" id="btnHienThi" value="Hiện thị sản phẩm">
+    </form>
+</body>
+<script src="bai6.js"></script>
+</html>
+
+

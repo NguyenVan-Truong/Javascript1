@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Bánh mì</td>
+            <td>10.000</td>
+            <td><input type="number" min="0" onchange="calculateTotal()" /></td>
+            <td><span id="total1">0</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Chả giò</td>
+            <td>20.000</td>
+            <td><input type="number" min="0" onchange="calculateTotal()" /></td>
+            <td><span id="total2">0</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Nước ngọt</td>
+            <td>5.000</td>
+            <td><input type="number" min="0" onchange="calculateTotal()" /></td>
+            <td><span id="total3">0</span></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="4">Tổng tiền</th>
+            <td><span id="grandTotal">0</span></td>
+          </tr>
+        </tfoot>
+      </table>
+      
+      <script>
+        function calculateTotal() {
+          let grandTotal = 0
+          const rows = document.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+      
+          for (let i = 0; i < rows.length; i++) {
+            const quantity = parseInt(rows[i].getElementsByTagName('input')[0].value) || 0;
+            const price = parseInt(rows[i].getElementsByTagName('td')[2].textContent);
+            const total = quantity * price;
+      
+            document.getElementById(`total${i+1}`).innerHTML = total;
+            grandTotal += total;
+          }
+      
+          document.getElementById('grandTotal').innerHTML = grandTotal;
+        }
+      </script>
+      
+</body>
+</html>
+  
